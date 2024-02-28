@@ -1,0 +1,35 @@
+﻿<form asp-controller="Articolo" asp-action="Add" method="post" class="needs-validation" novalidate>
+    <div class="mb-3">
+        <label for="nome" class="form-label">Nome:</label>
+        <input type="text" class="form-control" id="nome" name="nome" required>
+        <div class="invalid-feedback">
+            Inserisci il nome dell'articolo.
+        </div>
+    </div>
+    <div class="mb-3">
+        <label for="descrizione" class="form-label">Descrizione:</label>
+        <input type="text" class="form-control" id="descrizione" name="descrizione" required>
+        <div class="invalid-feedback">
+            Inserisci una descrizione dell'articolo.
+        </div>
+    </div>
+    <div class="mb-3">
+        <label for="prezzo" class="form-label">Prezzo (€):</label>
+        <input type="number" class="form-control" id="prezzo" name="prezzo" required>
+        <div class="invalid-feedback">
+            Inserisci il prezzo dell'articolo.
+        </div>
+    </div>
+    <div class="mb-3">
+        <label for="imgCopertina" class="form-label">Immagine di copertina:</label>
+        <input type="text" class="form-control" id="imgCopertina" name="imgCopertina" required>
+        <div class="invalid-feedback">
+            Inserisci l'URL dell'immagine di copertina dell'articolo.
+        </div>
+    </div>
+    <div class="mb-3">
+        <label for="imgAggiuntive" class="form-label">Immagini aggiuntive:</label>
+        <input type="text" class="form-control" id="imgAggiuntive" name="imgAggiuntive">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

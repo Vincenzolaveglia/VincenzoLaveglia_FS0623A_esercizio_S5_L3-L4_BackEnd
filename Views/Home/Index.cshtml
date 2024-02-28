@@ -1,0 +1,20 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container text-center mt-5">
+    <h1 class="display-4 mb-4">Benvenuto</h1>
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <p class="lead">Scopri la nostra collezione di articoli di alta qualità.</p>
+            <a href="@Url.Action("Index", "Articolo")" class="btn btn-primary btn-lg mb-3">Vedi articoli</a>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <p class="lead">Sei un amante della moda? Aggiungi nuovi articoli alla nostra collezione.</p>
+            <a href="@Url.Action("Add", "Articolo")" class="btn btn-success btn-lg">Aggiungi articoli</a>
+        </div>
+    </div>
+</div>
+

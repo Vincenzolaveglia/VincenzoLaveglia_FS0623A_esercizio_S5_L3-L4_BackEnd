@@ -1,0 +1,32 @@
+﻿@model Articolo
+
+<form asp-controller="Articolo" asp-action="Edit" method="post" class="mt-4">
+    <input type="hidden" asp-for="Id" />
+
+    <div class="form-group">
+        <label for="inputNome">Nome</label>
+        <input type="text" asp-for="Nome" class="form-control" id="inputNome" placeholder="Inserisci il nome">
+    </div>
+
+    <div class="form-group">
+        <label for="inputDescrizione">Descrizione</label>
+        <input type="text" asp-for="Descrizione" class="form-control" id="inputDescrizione" placeholder="Inserisci la descrizione">
+    </div>
+
+    <div class="form-group">
+        <label for="inputPrezzo">Prezzo</label>
+        <input type="number" asp-for="Prezzo" class="form-control" id="inputPrezzo" placeholder="Inserisci il prezzo">
+    </div>
+
+    <div class="form-group">
+        <label for="inputImgCopertina">Immagine di copertina</label>
+        <input type="text" asp-for="ImgCopertina" class="form-control" id="inputImgCopertina" placeholder="URL dell'immagine di copertina">
+    </div>
+
+    <div class="form-group">
+        <label for="inputImgAggiuntive">Immagini aggiuntive</label>
+        <input type="text" asp-for="ImgAggiuntive" class="form-control" id="inputImgAggiuntive" placeholder="URL delle immagini aggiuntive">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Salva</button>
+</form>

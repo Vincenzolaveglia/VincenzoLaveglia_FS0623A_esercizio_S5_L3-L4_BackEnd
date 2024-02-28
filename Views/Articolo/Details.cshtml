@@ -1,0 +1,22 @@
+﻿﻿@{
+    ViewData["Title"] = "Details page";
+}
+
+<div class="product-detail">
+    <div class="cover-image">
+        <img src="@Model.ImgCopertina" class="img-fluid" alt="Copertina del prodotto" style="max-width: 500px;">
+    </div>
+    <div class="product-info">
+        <h2>@Model.Nome</h2>
+        <p class="price">Prezzo: @(Model.Prezzo)€</p>
+        <p class="description">Descrizione: @(Model.Descrizione)</p>
+    </div>
+    <div class="additional-images">
+        <h3>Immagini aggiuntive</h3>
+        <div class="additional-images-container">
+            <img src="@Model.ImgAggiuntive" alt="Immagine aggiuntiva 1">
+        </div>
+    </div>
+</div>
+
+
